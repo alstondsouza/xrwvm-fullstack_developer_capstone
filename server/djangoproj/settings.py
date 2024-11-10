@@ -30,9 +30,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'localhost',
-    'https://alstonsouza-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai']
+    'https://alstonsouza-8000.theianext-0-labs-prod'\
+    '-misc-tools-us-east-0.proxy.cognitiveclass.ai']
 CSRF_TRUSTED_ORIGINS = [
-    'https://alstonsouza-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai']
+    'https://alstonsouza-8000.theianext-0-labs-prod'\
+    '-misc-tools-us-east-0.proxy.cognitiveclass.ai']
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [],
@@ -94,10 +96,13 @@ DATABASES = {
     }
 }
 
+USER_ATTR_VALIDATOR = 'django.contrib.auth.password_validation.'\
+'UserAttributeSimilarityValidator'
+
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME':
-        'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        USER_ATTR_VALIDATOR,
     },
     {
         'NAME':
