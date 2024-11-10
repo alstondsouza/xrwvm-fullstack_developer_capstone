@@ -30,10 +30,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'localhost',
-    'https://alstonsouza-8000.theianext-0-labs-prod'\
+    'https://alstonsouza-8000.theianext-0-labs-prod'
     '-misc-tools-us-east-0.proxy.cognitiveclass.ai']
 CSRF_TRUSTED_ORIGINS = [
-    'https://alstonsouza-8000.theianext-0-labs-prod'\
+    'https://alstonsouza-8000.theianext-0-labs-prod'
     '-misc-tools-us-east-0.proxy.cognitiveclass.ai']
 
 REST_FRAMEWORK = {
@@ -97,7 +97,7 @@ DATABASES = {
 }
 
 USER_ATTR_VALIDATOR = 'django.contrib.auth.password_validation.'\
-'UserAttributeSimilarityValidator'
+    'UserAttributeSimilarityValidator'
 
 AUTH_PASSWORD_VALIDATORS = [
     {
